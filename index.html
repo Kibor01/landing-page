@@ -1,62 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Webpage</title>
-</head>
-<body>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
+    <script
+      src="https://kit.fontawesome.com/0494bf5985.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-    <h1>Welcome to My Personal Webpage</h1>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="index.html"
+          ><span id="logo_left">Agri</span><span id="logo_right">Nova</span></a
+        >
+      </div>
+      <nav class="main-navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#services.html">Services</a></li>
+          <li><a href="#about.html">About</a></li>
+          <li><a href="#contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <p>
-        Welcome! This webpage introduces who I am, my interests, educational
-        background, skills, and future career goals. It demonstrates the proper
-        use of HTML headings and paragraphs to organize content in a clear and
-        meaningful way.
-    </p>
+    <!-- Hero section -->
+    <div id="home" class="hero">
+      <div class="hero-text">
+        <h1>Grow Smarter.<br />Harvest Better.</h1>
+        <p>
+          Helping farmers increase productivity through modern technology,
+          market information and agricultural consultation.
+        </p>
+        <div class="buttons">
+          <a href="#" class="btn">Get Started</a>
+          <a href="#" class="btn2">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="agric-products.jpg" alt="Farmer" />
+      </div>
+    </div>
 
-    <h2>About Me</h2>
-    <p>
-        My name is Kipkosgei Dominic. I am passionate about web development,
-        technology, and agriculture. I enjoy learning new skills that help me
-        solve real-world problems and improve people's lives through innovation.
-    </p>
+    <!-- My Services -->
+    <div id="services.html">
+      <h2>Our Services</h2>
+      <div class="cards">
+        <div class="card">
+          <i class="fa-solid fa-seedling"></i>
+          <h3>Farm Planning</h3>
+          <p>Professional planning for maximum productivity.</p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-chart-line"></i>
+          <h3>Market Analysis</h3>
+          <p>Daily agricultural market prices and trends.</p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-cloud-sun-rain"></i>
+          <h3>Weather Updates</h3>
+          <p>Reliable forecasts to improve farm decisions.</p>
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-cow"></i>
+          <h3>Livestock Management</h3>
+          <p>Expert guidance for healthy livestock production.</p>
+        </div>
+      </div>
+    </div>
 
-    <h2>Educational Background</h2>
-    <p>
-        I have pursued higher education to gain knowledge and practical skills
-        in my field of study. My education has strengthened my problem-solving,
-        communication, and critical-thinking abilities.
-    </p>
+    <!-- About Agrinova -->
+    <div id="about.html">
+      <div class="about-image">
+        <img src="fruits.png" alt="Farm" />
+      </div>
+      <div class="about-text">
+        <h2>Why Choose AgriNova?</h2>
+        <p>
+          We combine technology with practical agricultural knowledge to help
+          farmers improve production, increase profits and access better
+          markets.
+        </p>
+        <ul>
+          <li>✔ Modern Farming Techniques</li>
+          <li>✔ Agricultural Consultation</li>
+          <li>✔ Market Access</li>
+          <li>✔ Farm Financial Planning</li>
+        </ul>
+      </div>
+    </div>
 
-    <h2>Skills</h2>
-    <p>
-        I have skills in HTML, CSS, JavaScript, and responsive web design.
-        I also have knowledge of computer applications, teamwork,
-        communication, and project management.
-    </p>
+    <!-- TESTIMONIALS -->
+    <div class="testimonials">
+      <h2>What Farmers Say</h2>
+      <div class="cards">
+        <div class="card">
+          <p>"AgriNova transformed my farming business."</p>
+          <h4>★★★★★</h4>
+          <strong>James</strong>
+        </div>
+        <div class="card">
+          <p>"The weather information helped increase my harvest."</p>
+          <h4>★★★★★</h4>
+          <strong>Mary</strong>
+        </div>
+        <div class="card">
+          <p>"The consultation service was excellent!"</p>
+          <h4>★★★★★</h4>
+          <strong>Peter</strong>
+        </div>
+      </div>
+    </div>
 
-    <h2>Career Goals</h2>
-    <p>
-        My goal is to become a professional software developer and build
-        innovative web applications that provide useful solutions for businesses,
-        students, and communities.
-    </p>
-
-    <h2>Hobbies and Interests</h2>
-    <p>
-        During my free time, I enjoy reading technology articles, learning new
-        programming languages, playing football, and exploring modern web
-        development techniques.
-    </p>
-
-    <h2>Conclusion</h2>
-    <p>
-        Thank you for visiting my webpage. I look forward to continuing my
-        learning journey and using technology to create meaningful solutions
-        that benefit society.
-    </p>
-
-</body>
+    <!-- Call to action section-->
+    <div id="contact.html">
+      <h2>Ready to Grow?</h2>
+      <p>Join hundreds of successful farmers today.</p>
+    </div>
+    <footer>
+      <div class="copyright">
+        <p>copyright@2026 ||Kipkosgei Dominic||</p>
+      </div>
+      <div class="social-links">
+        <a href="https://www.facebook.com/profile.php?id=61550864561580" target="_blank"><i
+          class="fa-brands fa-facebook"></i></a>
+        <a href="https://wa.me/2547420 61848" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://twitter.com/kipkosgeibor" target="_blank"><i class="fa fa-twitter"
+          style="font-size: 40px"></i></a>
+        <a href="https://www.instagram.com/kipkosgeibor97/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com/Kibor01" target="_blank"><i class="fa fa-github" style="font-size:36px"></i>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f8fff7;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: white;
+  position: fixed;
+  width: 100%;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.logo span {
+  color: #ff9800;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #2e7d32;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 150px 8%;
+  gap: 50px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 35px;
+  line-height: 1.8;
+}
+
+.hero-image {
+  flex: 1;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn,
+.btn2 {
+  padding: 15px 35px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn {
+  background: #2e7d32;
+  color: white;
+}
+
+.btn:hover {
+  background: #1b5e20;
+}
+
+.btn2 {
+  border: 2px solid #2e7d32;
+  color: #2e7d32;
+}
+
+.btn2:hover {
+  background: #2e7d32;
+  color: white;
+}
+
+section {
+  padding: 100px 8%;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #2e7d32;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card i {
+  font-size: 50px;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.about-text ul {
+  margin-top: 20px;
+  line-height: 2;
+  list-style: none;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.about-image,
+.about-text {
+  flex: 1;
+}
+
+.testimonials {
+  background: #edf8ee;
+}
+
+#contact {
+  text-align: center;
+}
+
+footer {
+  background: #000;
+  color: white;
+  text-align: center;
+  margin: 30px;
+}
+
+copyright {
+  text-align: left;
+}
+
+.social-links {
+  display: flex;
+  gap: 60px;
+  align-content: center;
+  justify-content: center;
+}
+
+.social-links > a {
+  color: #ffffff;
+  transition: all 0.4s ease-in-out;
+  background-color: #06640621;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.social-links > a:hover {
+  text-decoration: underline;
+  background-color: #ffffff;
+  color: #06640621;
+}
+
+.social-links > a > i {
+  font-size: 2em;
+}
+
+@media (max-width: 900px) {
+  .hero,
+  #about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 42px;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  nav ul {
+    margin-top: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+}
